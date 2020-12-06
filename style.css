@@ -1,0 +1,412 @@
+/** {
+    outline: 1px solid orange;
+}*/
+
+body {
+    color: #d4d4d4;
+    font-family: Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    padding-top: 50px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.logo {
+    margin-right: 60px;
+}
+
+.contacts-menu {
+    margin-right: 80px;
+    margin-left: auto;
+}
+
+.contacts-menu .phone,
+.mail {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin-left: 20px;
+}
+
+.contacts-menu span {
+    display: none;
+}
+
+.contacts-menu .mail {
+    background-image: url(img/mail-icon.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.contacts-menu .phone {
+    background-image: url(img/phone-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.columns {
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+}
+
+.about {
+    align-items: center;
+    /*padding-left: 60px;*/
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 195px;
+    padding: 0 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*vertical-align: top;*/
+
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    text-align: left;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+
+    right: 20px;
+    top: 17px;
+
+    width: 19px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.btn-yellow {
+    color: #222222;
+    background-color: #ffcb06;
+}
+
+.btn-yellow::after {
+    background-image: url('img/right-arrow-dark.png');
+}
+
+.btn-yellow:hover {
+    background-color: #ffffff;
+}
+
+.btn-black {
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.btn-black::after {
+    background-image: url('img/right-arrow-white.png');
+}
+
+.btn-black:hover {
+    background-color: #676767;
+}
+
+h2 {
+    display: none;
+}
+
+header {
+    background-color: #222222;
+    padding-bottom: 100px;
+}
+
+.features {
+    padding: 85px 0;
+    background-color: #131313;
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features ul li {
+    width: 180px;
+    margin-right: 80px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.feature-russia::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 68px;
+    background-image: url("img/advantage-icon-1.png");
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+
+.feature-food::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 68px;
+    background-image: url("img/advantage-icon-2.png");
+    background-repeat: no-repeat;
+}
+
+.feature-pilots::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 68px;
+    background-image: url("img/advantage-icon-3.png");
+    background-repeat: no-repeat;
+}
+
+.feature-trips {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 68px;
+    background-image: url("img/advantage-icon-4.png");
+    background-repeat: no-repeat;
+}
+
+.columns .left-column {
+    width: 440px;
+    margin-right: 80px;
+}
+
+.columns .right-column {
+    width: 440px;
+}
+
+.moon-vacation {
+    padding: 80px 0;
+}
+
+.recommendations {
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+.application {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+}
+
+.timetable {
+    background-color: #222222;
+    padding: 80px;
+}
+
+.schedule {
+    width: 960px;
+    border: 0px;
+    text-align: left;
+    margin-top: 80px;
+    border-collapse: collapse;
+}
+
+.schedule tr {
+    border-bottom: 1px solid #555555;
+}
+
+.schedule th,
+td {
+    width: 260px;
+    padding: 15px 0;
+    border: 0px;
+    border-bottom: 1px solid #555555;
+}
+
+.schedule th {
+    border: 0px;
+    background-color: #111111;
+}
+
+footer {
+    border: 0px;
+    background-color: #131313;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-columns .left-column {
+    width: 180px;
+    margin-right: 80px;
+}
+
+.footer-columns .right-column {
+    width: 700px;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu li {
+    width: 180px;
+    margin-right: 80px;
+}
+
+.submenu-title {
+    display: block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #555555;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.footer-submenu li {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-recommendations li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.list-recommendations li::before {
+    content: "";
+    position: absolute;
+
+    left: 0px;
+    top: 5px;
+    
+    background-color: #ffcb06;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    padding: 20px;
+    border: none;
+}
+
+#fio, #phone {
+    width: 400px;
+}
+
+#height, #weight {
+    width: 172px;
+    width: 172px;
+}
+
+#height {
+    margin-right: 10px;
+}
+
+.site-menu a {
+    color: #d4d4d4;
+    margin-right: 25px;
+}
+
+h1 {
+    font-family: Courier New;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about p {
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.about .left-column * {
+    margin-left: 120px;
+}
+
+.moon-vacation, .recommendations {
+    color: #222222;
+}
+
+h3 {
+    font-family: Courier New;
+    font-size: 24px;
+}
+
+.footer-submenu li a {
+    color: #888888;
+}
+
+.footer-columns .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer-logo img {
+    margin-right: 20px;
+}
+
+.application {
+    color: #222222;
+}
+
+.timetable h3 {
+    color: #feca30;
+    padding: 0;
+    margin: 0;
+}
+
+.timetable a {
+    color: #feca30;
+}
+
+.timetable a:hover {
+    color: #ffffff;
+}
+
+#personal-data {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.copyright {
+    padding-bottom: 20px;
+}
